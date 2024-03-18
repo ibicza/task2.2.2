@@ -5,8 +5,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import web.Models.Car;
-import web.sevices.CarService;
+import web.model.Car;
+import web.sevice.CarService;
 
 import java.util.List;
 
