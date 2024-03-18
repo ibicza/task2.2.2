@@ -18,12 +18,15 @@ public class CarService {
             new Car("BMW", "X5", 2023)
     );
 
-    public List<Car> getAllCars() {
-        return cars;
-    }
 
-    public List<Car> getCars(int count) {
+    public List<Car> getCars(Integer count) {
+
+        if (count == null || count >= 5) {
+            return cars;
+        }
         return cars.stream().limit(count).collect(Collectors.toList());
+
+
     }
 }
 
